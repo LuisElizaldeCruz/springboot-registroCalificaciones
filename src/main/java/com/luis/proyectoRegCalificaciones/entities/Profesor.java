@@ -11,6 +11,8 @@ import java.util.List;
 public class Profesor extends Persona{
 
    // @Autowired
-    @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
+    //@OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
+   @OneToMany(mappedBy = "profesor")
     private List<Materia> materias;
+
 }

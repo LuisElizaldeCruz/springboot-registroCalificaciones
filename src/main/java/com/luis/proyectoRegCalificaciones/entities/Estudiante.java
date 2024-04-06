@@ -2,6 +2,8 @@ package com.luis.proyectoRegCalificaciones.entities;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Estudiante extends Persona{
 
@@ -19,6 +21,12 @@ public class Estudiante extends Persona{
         this.correo = correo;
         this.numTelefono= numTelefono;
     }
+
+    @OneToMany(mappedBy = "estudiante")
+    private List<Materia> materias;
+
+    @OneToMany(mappedBy = "estudiante")
+    private List<Calificacion> calificaciones;
 
     public String getGradoEscolar() {
         return gradoEscolar;
