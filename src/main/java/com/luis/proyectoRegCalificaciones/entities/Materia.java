@@ -49,4 +49,11 @@ public class Materia{
     public void setProfesor(Profesor profesor) {
         this.profesor = profesor;
     }
+
+    @Override
+    public String toString() {
+        return "{id=" + id + ", nombreMateria=" + nombreMateria + ", estudiante=" + estudiante + ", profesor="
+                + profesor + ", calificaiones=" + calificaiones + "}";
+    }
+    
 }

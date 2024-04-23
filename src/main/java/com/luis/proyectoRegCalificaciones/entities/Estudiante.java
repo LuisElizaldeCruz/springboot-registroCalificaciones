@@ -53,4 +53,10 @@ public class Estudiante extends Persona{
         this.numTelefono = numTelefono;
     }
 
+    @Override
+    public String toString() {
+        return super.toString()+"{gradoEscolar=" + gradoEscolar + ", correo=" + correo + ", numTelefono=" + numTelefono
+                + ", materias=" + materias + ", calificaciones=" + calificaciones + "}";
+    }
+
 }

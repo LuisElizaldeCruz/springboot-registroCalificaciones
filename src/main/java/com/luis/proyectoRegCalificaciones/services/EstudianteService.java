@@ -7,13 +7,13 @@ import java.util.List;
 public interface EstudianteService {
     List<Estudiante> obtenerTodoE();
 
-    Estudiante obtenerPorId(Long id);
+    Estudiante obtenerEstudiantePorId(Long id);
 
     Estudiante crearEstudiante(Estudiante estudiante);
 
-    Estudiante actualizarPersona(Long id, Estudiante estudiante);
+    Estudiante actualizarEstudiante(Long id, Estudiante estudiante);
 
-    void eliminarPersona(Long id);
+    void eliminarEstudiante(Long id);
 
     Long contarEstudiantes();
 }
