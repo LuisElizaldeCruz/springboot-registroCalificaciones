@@ -3,17 +3,18 @@ package com.luis.proyectoRegCalificaciones.services;
 import com.luis.proyectoRegCalificaciones.entities.Estudiante;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface EstudianteService {
-    List<Estudiante> obtenerTodoE();
+    List<Estudiante> findAll();
 
-    Estudiante obtenerEstudiantePorId(Long id);
+    Optional findById(Long id);
 
-    Estudiante crearEstudiante(Estudiante estudiante);
+    Estudiante save(Estudiante estudiante);
 
-    Estudiante actualizarEstudiante(Long id, Estudiante estudiante);
+    Estudiante update(Long id, Estudiante estudiante);
 
-    void eliminarEstudiante(Long id);
+    void delete(Long id);
 
-    Long contarEstudiantes();
+
 }

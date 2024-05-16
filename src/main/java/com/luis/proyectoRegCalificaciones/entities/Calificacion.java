@@ -82,4 +82,15 @@ public class Calificacion {
         this.materia = materia;
     }
 
+    @Override
+    public String toString() {
+        return "Calificacion{" +
+                "id=" + id +
+                ", califParcial1=" + califParcial1 +
+                ", califParcial2=" + califParcial2 +
+                ", promedio=" + promedio +
+                ", estudiante=" + estudiante +
+                ", materia=" + materia +
+                '}';
+    }
 }
